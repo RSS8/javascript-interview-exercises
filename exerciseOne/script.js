@@ -8,5 +8,11 @@
     {id: 5, name: 'Leeroy', location: 'Sundsvall'},
     {id: 6, name: 'Tesla', location: 'Palo Alto'}
   ]
+  var rows= "";
+  var list = document.getElementById('list');
 
+  for ( a =0; a< companies.length; a++){
+    rows += '<li> ' + companies[a].name + " located at " + companies[a].location+ '</li>'
+  };
+  list.innerHTML = rows;
 })()
