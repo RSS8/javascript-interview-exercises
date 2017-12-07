@@ -12,7 +12,15 @@
   var list = document.getElementById('list');
 
   for ( a =0; a< companies.length; a++){
-    rows += '<li> ' + companies[a].name + " located at " + companies[a].location+ '</li>'
+      rows += '<li> ' + companies[a].name + " located at " + companies[a].location+ '</li>'
   };
   list.innerHTML = rows;
+  var listrow = document.getElementById('list').getElementsByTagName('li');
+  for (var lr = 0; lr<listrow.length; lr++){
+      listrow[lr].addEventListener('click', function (event){
+          alert("Clicked: " + this.innerText);
+      })
+     
+  }
+
 })()
