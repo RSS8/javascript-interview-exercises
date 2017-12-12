@@ -31,7 +31,7 @@
      
   }
 */
-console.time('Function #1');
+
     var popupfragment = document.createDocumentFragment();
 
     var list = document.getElementById("list");
@@ -48,5 +48,5 @@ console.time('Function #1');
         false);
     
     }
-console.timeEnd('Function #1')
+
 })()
